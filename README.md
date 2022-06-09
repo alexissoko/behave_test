@@ -1,7 +1,7 @@
-Behave_test
 # Behave template
 
-Behave is a BBD framework for Python
+Behave is a BBD framework for Python. Checks for hoover (matrix dashboard challenge).
+Creates HTML reports with "behave-html-formatter".
 
 # Installation
 
@@ -28,17 +28,10 @@ pip install -r requirements
 
 ## Usage
 
-```python
-import foobar
+```bash
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+# root folder
+behave -f html -o behave-report.html
 ```
 
 ## Contributing

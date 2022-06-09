@@ -2,21 +2,21 @@ import requests
 from behave import *
 from helpers import is_port_in_use
 
-
-@given('we have behave app online and valid coord yet')
+@given('we have behave app on server')
 def step_impl(context):
     context.headers = {
     'Content-type': 'application/json',
     }
 
-    context.data = '{ "roomSize" : [5, 5], "coords" : [3, 3], "patches" : [ [1, 0], [2, 2], [2, 3] ], "instructions" : "NNESEESWNWW" }'
+    context.data = '{ "roomSize" : [5, 5], "coords" : [-100. 999], "patches" : [ [1, 0], [2, 2], [2, 3] ], "instructions" : "NNESEESWNWW" }'
 
     context.response = requests.post('http://localhost:8080/v1/cleaning-sessions', headers=context.headers, data=context.data)
 
-@when('the app is loaded still on server')
+@when('the app is running for the test')
 def step_impl(context):
     assert is_port_in_use(8080)
 
-@then('the result is again the expected')
+@then('app returns error on input')
 def step_impl(context):
-    assert "1" == context.response.text.split("patches")[1].split(":")[1].rstrip("}")
+
+    assert "error" in context.response.text()
