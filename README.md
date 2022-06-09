@@ -11,8 +11,8 @@ mkdir folder && cd folder
 ```
 
 # Docker
-
 [install Docker](https://docs.docker.com/engine/install/)
+* For docker container access reach to devops
 
 # create virtual env with python3
 ```
