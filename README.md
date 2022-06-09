@@ -37,7 +37,7 @@ pip install -r requirements
 ```bash
 
 # root folder
-behave -f html -o behave-report.html
+behave -f html -o oover_challenge_report_$(date +"%m_%d_%Y_").html
 ```
 
 ## Contributing
