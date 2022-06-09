@@ -18,6 +18,12 @@ mkdir folder && cd folder
 ```
 virtualenv --python=python3.9.12 .
 ```
+# get the code
+
+```
+git init
+git clone git@github.com:alexissoko/behave_test.git
+```
 
 # install requirements
 
