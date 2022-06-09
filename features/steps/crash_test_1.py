@@ -16,7 +16,7 @@ def step_impl(context):
 def step_impl(context):
     assert is_port_in_use(8080)
 
-@then('app returns error on input')
+@then('the coordinate input field shows error')
 def step_impl(context):
 
     assert "error" in context.response.text
