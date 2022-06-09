@@ -8,7 +8,7 @@ def step_impl(context):
     'Content-type': 'application/json',
     }
 
-    context.data = '{ "roomSize" : [5, 5], "coords" : [-100. 999], "patches" : [ [1, 0], [2, 2], [2, 3] ], "instructions" : "NNESEESWNWW" }'
+    context.data = '{ "roomSize" : [5, 5], "coords" : [-100, 999], "patches" : [ [1, 0], [2, 2], [2, 3] ], "instructions" : "NNESEESWNWW" }'
 
     context.response = requests.post('http://localhost:8080/v1/cleaning-sessions', headers=context.headers, data=context.data)
 
@@ -19,4 +19,4 @@ def step_impl(context):
 @then('app returns error on input')
 def step_impl(context):
 
-    assert "error" in context.response.text()
+    assert "error" in context.response.text

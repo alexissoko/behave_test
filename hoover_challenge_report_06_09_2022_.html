@@ -138,7 +138,7 @@ function Collapsible_expandAllFailed()
       <div class="scenario">
         <span class="scenario_file">features/crash_test_1.feature:3</span>
         <h3 onclick="Collapsible_toggle('scenario_0')" class="failed">
-          <span class="val">Scenario: woring coorinates are provided</span>
+          <span class="val">Scenario: wrong coorinates are provided</span>
         </h3>
         <ol class="scenario_steps" id="scenario_0">
           <li class="step passed">
@@ -180,8 +180,8 @@ function Collapsible_expandAllFailed()
   File &quot;/usr/local/lib/python3.9/site-packages/behave/matchers.py&quot;, line 98, in run
     self.func(context, *args, **kwargs)
   File &quot;features/steps/crash_test_1.py&quot;, line 22, in step_impl
-    assert &quot;error&quot; in context.response.text()
-TypeError: 'str' object is not callable
+    assert &quot;error&quot; in context.response.text
+AssertionError
 </pre>
                   
             </span>
@@ -205,7 +205,7 @@ TypeError: 'str' object is not callable
             <div class="step_name">
               <span class="keyword">Given </span>
               <span class="step val">we have behave app deployed</span>
-              <small class="step_duration">(0.008s)</small>
+              <small class="step_duration">(0.012s)</small>
             </div>
             <div class="step_file">
               <span>features/steps/crash_test_2.py:5</span>
@@ -253,7 +253,7 @@ TypeError: 'str' object is not callable
             <div class="step_name">
               <span class="keyword">Given </span>
               <span class="step val">we have behave app online and valid coord</span>
-              <small class="step_duration">(0.010s)</small>
+              <small class="step_duration">(0.009s)</small>
             </div>
             <div class="step_file">
               <span>features/steps/happy_path_1.py:5</span>
@@ -301,7 +301,7 @@ TypeError: 'str' object is not callable
             <div class="step_name">
               <span class="keyword">Given </span>
               <span class="step val">we have behave app online and valid coord yet</span>
-              <small class="step_duration">(0.008s)</small>
+              <small class="step_duration">(0.011s)</small>
             </div>
             <div class="step_file">
               <span>features/steps/happy_path_2.py:6</span>
