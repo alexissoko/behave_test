@@ -33,7 +33,7 @@ git clone git@github.com:alexissoko/behave_test.git
 pip install -r requirements
 ```
 
-## Usage (bash cmomands adds date stamp to log report)
+## Usage (bash command adds date stamp to log report)
 
 ```bash
 
