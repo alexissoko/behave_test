@@ -33,12 +33,12 @@ git clone git@github.com:alexissoko/behave_test.git
 pip install -r requirements
 ```
 
-## Usage
+## Usage (bash cmomands adds date stamp to log report)
 
 ```bash
 
 # root folder
-behave -f html -o oover_challenge_report_$(date +"%m_%d_%Y_").html
+behave -f html -o oover_challenge_report_$(date +"%Y-%m-%d_%H-%M-%S").html
 ```
 
 ## Contributing
