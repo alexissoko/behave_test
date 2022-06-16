@@ -14,9 +14,10 @@ mkdir folder && cd folder
 [install Docker](https://docs.docker.com/engine/install/)
 * For docker container access reach to devops
 
-# create virtual env with python3
+# create ans start virtual env with python3
 ```
 virtualenv --python=python3.9.12 .
+source bin/activate
 ```
 # get the code
 
